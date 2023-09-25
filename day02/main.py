@@ -4,8 +4,8 @@ import sys
 def p1():
     ans = 0
     for row in input:
-        lo = 10000
-        hi = -10000
+        lo = sys.maxsize
+        hi = -sys.maxsize-1
         for num in row:
             lo = min(lo,num)
             hi = max(hi,num)
