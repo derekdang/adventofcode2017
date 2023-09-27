@@ -3,23 +3,23 @@ import sys
 
 def p1():
     step_no,idx = 0,0
-    p1_input = input.copy()
-    while idx < len(p1_input):
-        tmp = p1_input[idx]
-        p1_input[idx] = p1_input[idx] + 1
+    input_copy = input.copy()
+    while idx < len(input_copy):
+        tmp = input_copy[idx]
+        input_copy[idx] = input_copy[idx] + 1
         idx = idx + tmp
         step_no = step_no + 1
     return step_no
 
 def p2():
     step_no,idx = 0,0
-    p2_input = input.copy()
-    while idx < len(p2_input):
-        tmp = p2_input[idx]
+    input_copy = input.copy()
+    while idx < len(input_copy):
+        tmp = input_copy[idx]
         if tmp >= 3:
-            p2_input[idx] = p2_input[idx] - 1
+            input_copy[idx] = input_copy[idx] - 1
         else:
-            p2_input[idx] = p2_input[idx] + 1
+            input_copy[idx] = input_copy[idx] + 1
         idx = idx + tmp
         step_no = step_no + 1
     return step_no
