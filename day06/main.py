@@ -51,7 +51,7 @@ def p2():
         else:
             seen_configurations[config] = 1
         reconfig_no = reconfig_no + 1
-    return reconfig_no - p1()
+    return reconfig_no
 
 if __name__ == "__main__":
     data = open(sys.argv[1]).read()
