@@ -10,12 +10,12 @@ def eval_input():
         ch = input[idx]
         if ch == "{":
             if len(stack) != 0 and stack[len(stack)-1] == "<":
-                chars_in_garbage = chars_in_garbage+1
+                chars_in_garbage = chars_in_garbage +1 
             else:
                 stack.append(ch)
         elif ch == "}" and stack[len(stack)-1] != "<":
             # print(f"Adding {len(stack)} to score")
-            score = len(stack)+score
+            score = len(stack) + score
             stack.pop()
         elif ch == "<" and stack[len(stack)-1] != "<":
             stack.append(ch)
@@ -24,7 +24,7 @@ def eval_input():
         elif ch == "!":
             idx = idx + 1
         elif stack[len(stack)-1] == "<":
-            chars_in_garbage = chars_in_garbage+1
+            chars_in_garbage = chars_in_garbage + 1
         idx = idx + 1
     return score,chars_in_garbage
 
