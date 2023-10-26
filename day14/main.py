@@ -64,10 +64,10 @@ def helper(grid: list, visited: set, r: int, c: int):
         return
 
     visited.add((r,c))
-    helper(grid, visited, r-1, c)
-    helper(grid, visited, r+1, c)
-    helper(grid, visited, r, c-1)
-    helper(grid, visited, r, c+1)
+    helper(grid, visited, r - 1, c)
+    helper(grid, visited, r + 1, c)
+    helper(grid, visited, r, c - 1)
+    helper(grid, visited, r, c + 1)
 
 def p2(grid: list) -> int:
     num_regions = 0
