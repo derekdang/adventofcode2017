@@ -44,8 +44,8 @@ def knot_hash(input: str) -> str:
         knot_hash = knot_hash + hexidecimal
     return knot_hash
 
-def hex_to_bin(c: str, num_bits) -> str:
-    return str(bin(int(c, 16))[2:].zfill(num_bits))
+def hex_to_bin(s: str, num_bits: int) -> str:
+    return str(bin(int(s, 16))[2:].zfill(num_bits))
 
 def p1(input: str) -> (int,list):
     num_used_squares = 0
@@ -87,4 +87,4 @@ if __name__ == "__main__":
     input = "ffayrhll"
     p1_ans, grid = p1(input)
     print(f"Num of Used Sqaures: {p1_ans}")
-    print(f"Num of regions/Islands: {p2(grid)}")
+    print(f"Num of Regions/Islands: {p2(grid)}")
