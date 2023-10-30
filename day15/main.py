@@ -34,6 +34,6 @@ if __name__ == "__main__":
     A_START, B_START = 722, 354
     A_CRITERIA, B_CRITERIA = 4, 8
     DENOMINATOR = 2147483647
-    NUM_PAIRS_P1, NUM_PAIRS_P2 = 40000000, 5000000
+    NUM_PAIRS_P1, NUM_PAIRS_P2 = 40_000_000, 5_000_000
     print(f"Part 1 Matching pairs: {p1(NUM_PAIRS_P1)}")
     print(f"Part 2 Matching pairs with criteria: {p2(NUM_PAIRS_P2)}")
