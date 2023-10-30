@@ -8,7 +8,7 @@ def p1(NUM_PAIRS: int) -> int:
         a_val = (a_val * A_FACTOR) % DENOMINATOR
         b_val = (b_val * B_FACTOR) % DENOMINATOR
         a_str, b_str = bin(a_val), bin(b_val)
-        if a_str[len(a_str) - 16:] == b_str[len(b_str) - 16:]: # last 16 match
+        if a_str[-16:] == b_str[-16:]: # last 16 bits match
             count += 1
     return count
 
@@ -25,7 +25,7 @@ def p2(NUM_PAIRS: int) -> int:
             b_list.append(bin(b_val))
 
     for a_str, b_str in zip(a_list, b_list):
-        if a_str[len(a_str) - 16:] == b_str[len(b_str) - 16:]: # last 16 match
+        if a_str[-16:] == b_str[-16:]: # last 16 bits match
             count += 1
     return count
 
