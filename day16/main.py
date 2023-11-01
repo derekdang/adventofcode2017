@@ -15,7 +15,7 @@ def swap_chars(line_dance: list[str], i: str, j: str) -> str:
     line_dance[i_ind] = j
     return "".join(line_dance)
 
-def spin(line_dance: str, i: int):
+def spin(line_dance: str, i: int) -> str:
     return line_dance[-i:] + line_dance[:len(line_dance)-i]
 
 def p1(line_dance: str, instructions: list[str]) -> str:
