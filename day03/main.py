@@ -1,6 +1,5 @@
 # https://adventofcode.com/2017/day/3
 import math
-from tqdm import tqdm
 spiral_order = ['R', 'U', 'L', 'D']
 spiral_dir = {'R':(1,0), 'U': (0,1), 'L': (-1,0), 'D': (0,-1)}
 
