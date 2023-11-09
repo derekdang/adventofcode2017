@@ -1,13 +1,13 @@
 # https://adventofcode.com/2017/day/17
 
-def find_new_pos(num_steps: int, index: int, buffer: list[int]):
+def find_new_pos(num_steps: int, index: int, buffer: list[int]) -> int:
     if index + num_steps >= len(buffer):
         index = (index + num_steps) % len(buffer)
     else:
         index += num_steps
     return index
 
-def find_pos2(num_steps, index, buffer):
+def find_pos2(num_steps: int, index: int, buffer: int) -> int:
     if index + num_steps >= buffer:
         index = (index + num_steps) % buffer
     else:
